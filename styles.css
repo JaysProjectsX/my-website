@@ -1,0 +1,68 @@
+:root {
+    --blue-color: rgb(31, 114, 204);
+}
+
+/* TYPE SELECTOR */
+
+body {
+    color: rgb(245, 245, 245);
+    background-color: rgb(25, 35, 46);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+p {
+    line-height: 2em;
+}
+
+/* ID SELECTOR */
+
+#meta_weapons_header {
+    color: var(--blue-color);
+    font-weight: 500;
+    font-variant: small-caps;
+    clear: left;
+    
+}
+
+#body_h2 {
+    color: var(--blue-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+}
+
+#soap_image {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+}
+
+/* CLASS SELECTOR */
+
+/*
+.body_header {
+    color: rgb(18, 90, 168);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+*/
+
+/* RELATIONAL SELECTOR */
+
+section#meta_weapons_section>ol {
+    color:rgb(169, 199, 255);
+}
+
+main strong {
+    color:rgb(218, 69, 32);
+}
+
+/* DESCENDANT SELECTOR */
+
+section#cod_official a:visited {
+    color:rgb(15, 114, 243);
+}
+
+section#cod_official a:hover {
+    font-size: 115%;
+    color:rgb(15, 190, 243);
+}
