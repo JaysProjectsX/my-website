@@ -14,14 +14,64 @@ p {
     line-height: 2em;
 }
 
+br {
+    clear:left;
+}
+
+footer {
+    font-size: small;
+    clear:both
+}
+
+article {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 2px solid rgb(47, 71, 90);
+}
+
 /* ID SELECTOR */
+
+#stg44_element {
+    background-image: linear-gradient(45deg, rgb(19, 39, 61), rgb(47, 87, 129) 50%, rgb(19, 39, 61));
+    border: 2px solid rgb(29, 56, 85);
+}
+
+#meta_weapons_section {
+    float:left;
+    width:450px;
+    padding: 1em;
+}
+
+#warzone_weapons {
+    float: left;
+    width: 450px;
+    padding-left: 15em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#cod_official {
+    float: right;
+    width: 450px;
+    padding: 1em
+}
 
 #meta_weapons_header {
     color: var(--blue-color);
     font-weight: 500;
     font-variant: small-caps;
-    clear: left;
-    
+}
+
+#warzone_weapons_header {
+    color: var(--blue-color);
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+#official_cod {
+    color: var(--blue-color);
+    font-weight: 500;
+    font-variant: small-caps;
 }
 
 #body_h2 {
@@ -46,9 +96,20 @@ p {
 }
 */
 
+.box {
+    width: 25%;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
 /* RELATIONAL SELECTOR */
 
 section#meta_weapons_section>ol {
+    color:rgb(169, 199, 255);
+}
+
+section#warzone_weapons>ol {
     color:rgb(169, 199, 255);
 }
 
@@ -63,6 +124,15 @@ section#cod_official a:visited {
 }
 
 section#cod_official a:hover {
+    font-size: 115%;
+    color:rgb(15, 190, 243);
+}
+
+section#attachment_configs_section a:visited {
+    color:rgb(15, 114, 243);
+}
+
+section#attachment_configs_section a:hover {
     font-size: 115%;
     color:rgb(15, 190, 243);
 }
