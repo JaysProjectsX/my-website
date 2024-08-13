@@ -1,0 +1,368 @@
+/* Start of Variables/Roots */
+:root {
+    --blue-color: rgb(31, 114, 204);
+    --main-nav-color: rgb(23, 45, 65);
+    --hover-nav-color: rgb(21, 50, 77);
+    --strong-color: rgb(218, 69, 32);
+    --header-background-color: rgb(37, 56, 78);
+    --article-background-color: rgb(47, 71, 90);
+    --footer-background-color: rgb(31, 46, 65);
+    --main-background-color: rgb(25, 35, 46);
+    --weapon-list-text-color: rgb(169, 199, 255);
+    --link-visited-color: rgb(15, 114, 243);
+    --link-hover-color: rgb(15, 190, 243);
+    --credits-text-color: rgb(88, 99, 116);
+    --expandable-header-color: rgb(0, 149, 120);
+}
+
+
+/* Start of General Webpage CSS */
+body {
+    color: rgb(245, 245, 245);
+    background-color: var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 2em;
+}
+
+br {
+    clear: left;
+}
+
+footer {
+    font-size: small;
+    clear: both;
+    text-align: center;
+    background-color: var(--footer-background-color);
+    margin-top: 2em;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+article {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 2px solid var(--article-background-color);
+}
+
+header {
+    background-color: var(--header-background-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+main strong {
+    color: var(--strong-color);
+}
+
+.box {
+    width: 25%;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+div#sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+.large_images {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.large_images:hover {
+    opacity: .5;
+}
+
+/* Custom Expandable Section CSS */
+#grid {
+    margin: 1em;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 0.25fr);
+    grid-gap: 1em;
+    justify-content: center;
+}
+
+.expandable {
+    max-width: 500px;
+    margin: 1em 0;
+    font-size: 16px;
+
+}
+
+.expandable--open .expandable_content-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.expandable--open .expandable_icon {
+    transform: rotate(-90deg);
+}
+
+.expandable_title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    user-select: none;
+    background-color: var(--expandable-header-color);
+    color: white;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+}
+
+.expandable_title {
+    font-weight: bold;
+}
+
+.expandable_icon {
+    transition: transform 0.3s;
+}
+
+.expandable_content {
+    padding: 0 1em;
+    line-height: 1.4;
+    border: 1px solid var(--footer-background-color);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+}
+
+.expandable_content ul {
+    text-align: center;
+    list-style: none;
+    color: var(--weapon-list-text-color);
+}
+
+.expandable_content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+.expandable_images {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.expandable_images:hover {
+    width: 65px;
+}
+
+
+/* Navigation Menu Styles */
+#nav_menu {
+    width: 100%;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav_menu ul li {
+    flex-basis: 25%;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.6em;
+    color: white;
+    font-weight: bold;
+    background-color: var(--main-nav-color);
+    border-radius: 5px;
+}
+
+#nav_menu ul li a:hover {
+    color: rgb(82, 100, 124);
+    background-color: var(--hover-nav-color);
+}
+
+
+/* Meta Weapons Section Styles */
+#meta_weapons_section {
+    margin-right: 1em;
+    flex-basis: 25%;
+    background-color: var(--header-background-color);
+    border-radius: 10px;
+}
+
+#meta_weapons_header {
+    color: var(--blue-color);
+    font-weight: 500;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 1em;
+}
+
+section#meta_weapons_section>ol {
+    color: var(--weapon-list-text-color);
+    padding-top: 1em;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+/* Warzone Section Styles */
+#warzone_weapons {
+    margin-left: 1em;
+    flex-basis: 25%;
+    background-color: var(--header-background-color);
+    border-radius: 10px;
+}
+
+#warzone_weapons_header {
+    color: var(--blue-color);
+    font-weight: 500;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 2em;
+}
+
+section#warzone_weapons>ol {
+    color: var(--weapon-list-text-color);
+    padding-top: 1em;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+/* Official COD Section Styles */
+#official_cod {
+    color: var(--blue-color);
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+#cod_official {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+section#cod_official a:visited {
+    color: var(--link-visited-color);
+}
+
+section#cod_official a:hover {
+    font-size: 115%;
+    color: var(--link-hover-color);
+}
+
+
+/* Code for link to attachments webpage */
+section#attachment_configs_section a:visited {
+    color: var(--link-visited-color);
+}
+
+section#attachment_configs_section a:hover {
+    font-size: 115%;
+    color: var(--link-hover-color);
+}
+
+
+/* Extra CSS Start */
+
+#body_h2 {
+    color: var(--credits-text-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#soap_image {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+    width: 20%;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+#info {
+    margin-top: 2em;
+}
+
+#returntotop {
+    text-align: center;
+}
+
+section#returntotop a:visited {
+    color: var(--link-visited-color);
+}
+
+section#returntotop a:hover {
+    font-size: 115%;
+    color: var(--link-hover-color);
+}
+
+
+/* Media Query Start */
+@media only screen and (max-width: 1400px) {
+    #cod_official {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
+    div#sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #warzone_weapons {
+        padding-right: 1em;
+        margin: 1em;
+    }
+
+    #warzone_weapons_header {
+        color: var(--blue-color);
+        font-weight: 500;
+        font-variant: small-caps;
+    }
+}
+
+@media only screen and (max-width: 1092px) {
+    #grid {
+        margin: 1em;
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(1, 0.25fr);
+        grid-gap: 1em;
+        justify-content: center;
+    }
+
+    .expandable {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1033px) {
+    #nav_menu ul {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 964px) {
+    .expandable {
+        font-size: 12px;
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #nav_menu ul {
+        flex-direction: column;
+    }
+}

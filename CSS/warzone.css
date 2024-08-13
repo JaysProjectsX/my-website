@@ -1,0 +1,33 @@
+
+#warzone_image {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    display: block;
+    border-radius: 10px;
+    min-width: 500px;
+}
+
+#warzone_info {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgb(15, 28, 39);
+    border-radius: 10px;
+}
+
+#warzone_header {
+    margin-top: 1em;
+    color: rgb(41, 77, 129);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+#official_updates {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgb(15, 28, 39);
+    border-radius: 10px;
+}
