@@ -1,0 +1,17 @@
+- Empty Pages: Add some text to the 'Multiplayer' tab, the same technique you used for the other pages should do for now.
+
+- I would add more contrast I think the shades of blue are very close to each other and it can be hard to see the title above the content.  
+The text is a great color but the size a font may need to be adjusted because it is not super readable.
+
+
+
+Improvements made based on peer feedback:
+
+- Redesigned the nav menu layout and colors
+- Redesigned the home page layout to include more information
+- Added content to every webpage (Attachments, Warzone, and Multiplayer)
+- Added more contrast to the colors of the elements to allow easier readability
+- Adjusted a few media queries to allow smoother transitions for images and content with lower window dimensions
+- Redesigned the footer
+- Added icons to the nav menu
+- Added Favicon to the website

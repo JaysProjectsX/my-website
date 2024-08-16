@@ -1,3 +1,6 @@
+:root {
+    --background-area: rgb(13, 15, 22);
+}
 #attachments_image {
     margin-top: 2em;
     margin-bottom: 1em;
@@ -11,8 +14,81 @@
 
 #attachments_header {
     margin-top: 1em;
-    color: rgb(41, 77, 129);
+    color: rgb(140, 170, 212);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-variant: small-caps;
     text-align: center;
+    
+}
+
+.spacer-line {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(39, 45, 63);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 50%;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 0.25fr);
+    grid-gap: 1em;
+    justify-content: center;
+    background-color: var(--background-area);
+    border-radius: 12px;
+}
+
+.content_text {
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.text_sub1 {
+    margin-bottom: 0;
+    font-weight: 200;
+    opacity: 80%;
+}
+
+.text_sub1-1 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.content_image {
+    margin: 0;
+    align-items: center;
+}
+
+.content_image img {
+    width: 20%;
+    transition: 0.5s;
+}
+
+.content_image img:hover {
+    width: 23%;
+    cursor: pointer;
+}
+
+.hd2 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2em;
+}
+
+.update_ver {
+    text-align: center;
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template: repeat(1, 1fr) / repeat(1, 0.25fr);
+    }
 }
