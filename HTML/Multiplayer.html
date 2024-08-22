@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplayer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="multiplayer.css">
-    <link rel="icon" type="image/x-icon" href="/images/faivcon.ico">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/multiplayer.css">
+    <link rel="icon" type="image/x-icon" href="../images/faivcon.ico">
     <script src="https://kit.fontawesome.com/71dff8954f.js" crossorigin="anonymous"></script>
-    <script src="index.js" defer></script>
+    <script src="../JS/index.js" defer></script>
 </head>
 <header>
     <nav id="nav_menu">
         <ul>
-            <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
-            <li><a href="attachment-configs.html"><i class="fas fa-wrench"></i> Attachments</a></li>
-            <li><a href="warzone.html"><i class="fa-solid fa-plane-up"></i> Warzone</a></li>
-            <li><a href="Multiplayer.html"><i class="fa-solid fa-globe"></i> Multiplayer</a></li>
+            <li><a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="../HTML/attachment-configs.html"><i class="fas fa-wrench"></i> Attachments</a></li>
+            <li><a href="../HTML/warzone.html"><i class="fa-solid fa-plane-up"></i> Warzone</a></li>
+            <li><a href="../HTML/Multiplayer.html"><i class="fa-solid fa-globe"></i> Multiplayer</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
-    <img id="mp_image" class="large_images" src="images/mw3-mp-background.png" alt="Warzone Image">
+    <img id="mp_image" class="large_images" src="../images/mw3-mp-background.png" alt="Warzone Image">
     <h1 id="mp_header">about multiplayer:</h1>
-    <p class="update_ver">Last updated: 8/15/2024</p>
+    <p class="update_ver">Last updated: </p>
+    <p class="update_ver" id="datetime">null</p>
     <div class="spacer-line"></div>
 
     <section id="mp_info">
@@ -64,7 +65,7 @@
                         <p class="text_sub1">Underbarrel:</p>
                         <p class="text_sub1-1">DR-6 Handstop</p>
                         <div class="content_image">
-                            <img src="images/Weapons/striker-smg.png">
+                            <img src="../images/Weapons/striker-smg.png">
                         </div>
                     </div>
                 </div>
@@ -90,7 +91,7 @@
                         <p class="text_sub1">Stock:</p>
                         <p class="text_sub1-1">DR-6 Handstop</p>
                         <div class="content_image">
-                            <img src="images/Weapons/superi-46.png">
+                            <img src="../images/Weapons/superi-46.png">
                         </div>
                     </div>
                 </div>
@@ -116,7 +117,7 @@
                         <p class="text_sub1">Underbarrel:</p>
                         <p class="text_sub1-1">FTAC MSP-98 Handstop</p>
                         <div class="content_image">
-                            <img src="images/Weapons/sva-545-ar.png">
+                            <img src="../images/Weapons/sva-545-ar.png">
                         </div>
                     </div>
                 </div>
@@ -142,7 +143,7 @@
                         <p class="text_sub1">Underbarrel:</p>
                         <p class="text_sub1-1">Paracord Grip</p>
                         <div class="content_image">
-                            <img src="images/Weapons/static-hv-smg.png">
+                            <img src="../images/Weapons/static-hv-smg.png">
                         </div>
                     </div>
                 </div>
@@ -168,7 +169,7 @@
                         <p class="text_sub1">Underbarrel:</p>
                         <p class="text_sub1-1">DR-6 Handstop</p>
                         <div class="content_image">
-                            <img src="images/Weapons/striker-9-smg.png">
+                            <img src="../images/Weapons/striker-9-smg.png">
                         </div>
                     </div>
                 </div>
@@ -194,19 +195,25 @@
                         <p class="text_sub1">Underbarrel:</p>
                         <p class="text_sub1-1">Bruen Bastion Angled Grip</p>
                         <div class="content_image">
-                            <img src="images/Weapons/reclaimer-18-shotgun.png">
+                            <img src="../images/Weapons/reclaimer-18-shotgun.png">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="returntotop">
-        <p><a href="#top">Return to Top</a></p>
-    </section>
 </body>
 <div class="spacer"></div>
+<!--Youtube video-->
+<div class="yt-container">
+    <iframe id="yt-vid" width="560" height="315" src="https://www.youtube.com/embed/PKb-zfbpIHM?si=wfnzHZHKaMb7cDBH"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<section id="returntotop">
+    <p><a href="#top">Return to Top</a></p>
+</section>
 <footer>
     <div class="container">
         <div class="footer_line">
@@ -218,5 +225,13 @@
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    // Get current date
+    var now = new Date();
+    var datetime = now.toLocaleDateString();
+
+    // Inject date into HTML
+    document.getElementById("datetime").innerHTML = datetime;
+</script>
 
 </html>

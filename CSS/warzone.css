@@ -2,7 +2,7 @@
     --background-area: rgb(13, 15, 22);
 }
 
-#mp_image {
+#warzone_image {
     margin-top: 2em;
     margin-bottom: 1em;
     margin-left: auto;
@@ -13,14 +13,15 @@
     min-width: 500px;
 }
 
-#mp_info {
+#warzone_info {
     margin-top: 2em;
     padding: 1em;
     background-color: var(--background-area);
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-#mp_header {
+#warzone_header {
     margin-top: 1em;
     color: rgb(140, 170, 212);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -42,16 +43,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    width: 50%;
+    width: 68%;
 }
 
 .grid {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 0.25fr);
-    grid-gap: 1em;
+    grid-gap: 3em;
     justify-content: center;
     background-color: var(--background-area);
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .content_text {
@@ -78,12 +80,12 @@
 }
 
 .content_image1 img {
-    width: 20%;
+    width: 50%;
     transition: 0.5s;
 }
 
 .content_image1 img:hover {
-    width: 23%;
+    width: 53%;
     cursor: pointer;
 }
 
@@ -93,12 +95,12 @@
 }
 
 .content_image img {
-    width: 20%;
+    width: 40%;
     transition: 0.5s;
 }
 
 .content_image img:hover {
-    width: 23%;
+    width: 43%;
     cursor: pointer;
 }
 

@@ -1,7 +1,8 @@
 :root {
     --background-area: rgb(13, 15, 22);
 }
-#attachments_image {
+
+#mp_image {
     margin-top: 2em;
     margin-bottom: 1em;
     margin-left: auto;
@@ -12,12 +13,27 @@
     min-width: 500px;
 }
 
-#attachments_header {
+#mp_info {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: var(--background-area);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#mp_header {
     margin-top: 1em;
     color: rgb(140, 170, 212);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
     text-align: center;
-    
+}
+
+#official_updates {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgb(15, 28, 39);
+    border-radius: 10px;
 }
 
 .spacer-line {
@@ -27,16 +43,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    width: 50%;
+    width: 68%;
 }
 
 .grid {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 0.25fr);
-    grid-gap: 1em;
+    grid-gap: 3em;
     justify-content: center;
     background-color: var(--background-area);
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .content_text {
@@ -57,29 +74,58 @@
     font-weight: 500;
 }
 
+.content_image1 {
+    margin-bottom: 38px;
+    margin-top: 38px;
+    align-items: center;
+}
+
+.content_image1 img {
+    width: 50%;
+    transition: 0.5s;
+}
+
+.content_image1 img:hover {
+    width: 53%;
+    cursor: pointer;
+}
+
 .content_image {
     margin: 0;
     align-items: center;
 }
 
 .content_image img {
-    width: 20%;
+    width: 40%;
     transition: 0.5s;
 }
 
 .content_image img:hover {
-    width: 23%;
+    width: 43%;
     cursor: pointer;
 }
 
-.hd2 {
+.hd3 {
     font-family: "Anek Devanagari", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 2em;
+    margin-top: 64px;
+    margin-bottom: 1em;
+}
+
+.weapon_type {
+    background-color: rgb(36, 39, 49);
+    margin-top: 1em;
+    padding: 4px;
+    border-radius: 6px;
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    opacity: 60%;
 }
 
 .update_ver {
